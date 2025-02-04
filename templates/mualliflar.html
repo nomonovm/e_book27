@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-book | Mualliflar</title>
+</head>
+<body>
+<h1>Mualliflar:</h1>
+<hr>
+{% for muallif in mualliflar %}
+        <p>{{ forloop.counter }}.
+            <a href="/mualliflar/{mualliflar.id }}/">{{ muallif.ism }}</a>
+        <p>
+    {% endfor %}
+</body>
+</html>
